@@ -6,3 +6,6 @@ Lista de sesiones:
 [10-09-2020]	https://web.microsoftstream.com/video/07a6764e-aa45-4bdd-9b59-8f3aa21d4117
 
 [11-9-2020]		https://web.microsoftstream.com/video/8395da4e-0ca4-478d-a080-4bc09995bb7c
+
+[14-9-2020]		https://web.microsoftstream.com/video/cfc060b0-4021-4655-83b8-740ba41a3247
+

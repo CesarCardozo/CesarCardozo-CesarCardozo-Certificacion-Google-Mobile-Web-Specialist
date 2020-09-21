@@ -1,0 +1,470 @@
+:root{
+  --colorMenuSolido: rgba(59, 15, 23);
+  --colorMenu: rgba(59, 15, 23, 0.8);
+  --colorMenu_transparente: rgba(59, 15, 23, 0.555);
+  --colorSolido:rgb(59, 15, 23);
+  --colorSolidoHover:rgb(83, 23, 34);
+
+}
+
+/* main.css */
+*{
+  scroll-behavior: smooth;
+  padding:0;
+  margin:0;
+  font-family: sans-serif;
+list-style: none;
+}
+/* MENU NAVBAR */
+header{
+  position: fixed;
+  width: 100vw;
+
+}
+.menuIcono{
+  display: none !important;
+}
+.nav-menu{
+  transition-duration: 0.3s;
+  width: 100vw;
+  height: 35px;
+  margin: auto;
+  align-items: center;
+  background-color: var(--colorMenuSolido) ;
+  color: white;
+  padding: 10px;
+}
+.nav-menu-items{
+padding-top: 0.8rem;
+  display: flex;
+  justify-content: space-around;
+
+}
+/* CONTENIDO QUE SE MUESTRA EN EN EL PRIMER PLANO */
+.contentPrincipal{
+  background: url('../assets/bosque-arboles-696x444.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 90vh;
+  display:flex;
+  align-items: center;
+}
+.contentText{
+  width: 80%;
+  margin: auto;
+}
+.contentText h1 {
+  background-color: white;
+  width: 47%;
+  padding: 7px;
+}
+
+.contentText h2 {
+  background-color: var(--colorMenu) ;
+  color: white;
+  width: 25%;
+    padding: 7px;
+}
+/* CONTEND ACERDA DE LA PAGINA  */
+.contentAbout{
+
+    padding: 2rem 1rem 6rem 1rem;
+}
+.titleContent{
+    font-size: 2em;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.itemsAbout{
+    padding: 2rem;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    margin: auto;
+    text-align: center;
+}
+.itemsAbout  .circulo{
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--colorMenu);
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.circulo i{
+  font-size: 2.5em;
+  color: white;
+
+}
+.itemsAbout h3{
+    padding-bottom: 1rem;
+}
+
+
+/* CONTENT CON IMAGEN Y COLO DE FONDO */
+.contentInformation{
+    background-image: url('../assets/ciudad.jpg');
+    height: 40vh;
+
+}
+.bg-information{
+    background-color: var(--colorMenu_transparente);
+    height: 40vh;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+}
+
+.contentInformation_text{
+    width: 60%;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+.contentInformation_text h2 {
+  font-size: 2em;
+}
+.contentInformation_text button{
+
+  width: 40%;
+  margin-top: 1rem;
+  padding: 1rem;
+  border:none;
+  border-radius: 5px;
+
+}
+
+.titleContentImage{
+  font-size: 2em;
+  margin-top: 2rem;
+  text-align: center;
+}
+.itemsImage{
+
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  column-gap: 1rem;
+  row-gap:1rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+}
+.itemsImage img{
+  width: 100%;
+
+}
+.itemsImage figcaption{
+  text-align: center;
+}
+
+/* ESPACIADOR CON IMAGEN */
+.spacing{
+  margin-top: 4rem ;
+
+}
+/* TARJETAS INFERIORES */
+.contentTarjets{
+  display: grid;
+  grid-template-columns: repeat(3,33%);
+  grid-gap: 2rem;
+  margin: auto;
+  margin-top: 4rem;
+  width: 70%;
+  text-align: center;
+  color: white;
+}
+
+
+.itemsTarjets i{
+  font-size: 3em;
+  padding-bottom: 1rem;
+}
+.itemsTarjets h3{
+
+  padding-bottom: 1rem;
+}
+
+.itemsTarjets{
+  background-color: var(--colorSolido);
+  border-radius: 3px;
+  padding: 2rem;
+}
+
+.itemsTarjets:hover{
+  cursor: pointer;
+  transition-duration: 0.3s;
+  background-color: var(--colorSolidoHover);
+
+}
+
+/* FOOTER */
+.contentFooter{
+  background-color: #3B0F17;
+
+  display:grid;
+  grid-template-columns: repeat(4, 15%) 40%;
+  color:#D7D7D7;
+  margin-top: 5rem;
+  padding: 2rem 1rem;
+  border-top: 10px solid #B08F95;
+}
+
+div.itemsFooter li{
+  padding-top: 0.7rem;
+}
+
+ div.itemsFooter li a{
+  color: #B1B1B1;
+  text-decoration: none;
+}
+
+div.itemsFooter li a:hover{
+  color: white;
+}
+div.itemsSuscription form {
+
+  display:grid;
+  grid-template-areas: "titulo tilulo"
+                        "input boton";
+  margin-left: 4rem;
+
+}
+div.itemsSuscription label{
+  font-size: 1.1em;
+  grid-area: titulo;
+}
+
+div.itemsSuscription input[type=text]{
+  background-color: darkgrey;
+  border: none;
+  border-radius: 3px 0px 0px 3px;
+  color: white;
+  height: 40px;
+  grid-area: input;
+  margin-top: 1rem;
+}
+
+div.itemsSuscription input::placeholder{
+  padding-left: 0.5rem;
+  color: #E4E4E4;
+}
+
+div.itemsSuscription button{
+  border:none;
+  width: 100px;
+  height: 40px;
+  grid-area: boton;
+  margin-top: 1rem;
+  border-radius: 0px 3px 3px 0px;
+
+}
+
+
+/* Media Queries */
+/* Tablet */
+@media (min-width:576px) and (max-width:930px){
+
+  .contentPrincipal{
+    width: 100vw;
+    background-size: 100vw;
+  }
+ .contentText{
+   width: 90%;
+ }
+ .contentText h1,h2{
+   font-size: 1.2em;
+ }
+ .contentAbout{
+    padding: 1rem 0.5rem 2rem 0.5rem;
+}
+.titleContent{
+    font-size: 1.5em;
+    margin-top: 1rem;
+}
+
+.itemsAbout{
+    grid-template-columns: repeat(2,50%);
+    grid-gap: 1rem;
+    padding: 0;
+
+}
+.itemsAbout p{
+  text-align: justify;
+}
+.itemsAbout  .circulo{
+  width: 90px;
+   height: 90px;
+}
+
+.contentInformation, .bg-information{
+    height: 70vh;
+}
+.titleContentImage{
+  font-size: 1.5em;
+}
+.itemsImage{
+  grid-template-columns: repeat(2,50%);
+  grid-gap:1rem;
+}
+
+.contentTarjets{
+  width: 80%;
+  grid-template-columns: repeat(2,50%);
+}
+.contentFooter{
+
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "suscripcion suscripcion";
+  grid-gap: 1rem;
+  text-align: center;
+}
+
+div.itemsSuscription  {
+  width: 90%;
+  margin: auto;
+  grid-area: suscripcion;
+  margin-bottom: 1rem;
+}
+}
+/* Media Queries */
+/* Celular */
+@media (min-width:320px) and (max-width:575px){
+header{
+  width: 20vw;
+}
+.nav-menu{
+  width: 20px;
+  height: 20px;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 5px;
+
+
+}
+.menuIcono{
+  display: block !important;
+  margin-top: 2px;
+  margin-left: 3px;
+}
+.nav-menu-items{
+  display:none;
+}
+  .contentPrincipal{
+    width: 100vw;
+    height: 50vh;
+    background-size: 100vw 100vh;
+
+  }
+ .contentText{
+   width: 90%;
+ }
+ .contentText h1,h2{
+   font-size: 1em;
+ }
+ .contentText h1{
+   width: 90%;
+ }
+ .contentText h2{
+   width: 50%;
+ }
+ .contentAbout{
+    padding: 1rem 0.5rem 2rem 0.5rem;
+}
+.titleContent{
+    font-size: 1.1em;
+    margin-top: 1rem;
+}
+
+.itemsAbout{
+    grid-template-columns: 100%;
+    grid-gap: 1rem;
+    padding: 0;
+
+}
+.itemsAbout p{
+  text-align: justify;
+}
+.itemsAbout  .circulo{
+  width: 70px;
+   height: 70px;
+}
+
+.contentInformation, .bg-information{
+    height: 70vh;
+}
+.contentInformation_text{
+  width: 90%;
+}
+.titleContentImage{
+  font-size: 1.1em;
+}
+.itemsImage{
+  grid-template-columns: 100%;
+  grid-gap:1rem;
+}
+
+.contentTarjets{
+  width: 90%;
+  grid-template-columns: 100%;
+}
+.spacing{
+  display: none;
+}
+.contentFooter{
+
+  grid-template-columns: 100%;
+  grid-template-areas: "suscripcion";
+  grid-gap: 1rem;
+  text-align: center;
+
+}
+
+div.itemsSuscription  {
+  grid-area: suscripcion;
+}
+div.itemsSuscription form {
+  margin: 0;
+}
+
+}
+
+
+/* Efectos adicionales */
+/* .transparente{
+  transition-duration: 0.3s;
+
+  background-color: var(--colorMenu);
+    width: 80%;
+    height: 30px;
+    padding-top: 0;
+}
+.botonInicio{
+  transition-duration: 0.3s;
+  position: fixed;
+  background-color: var(--colorMenuSolido);
+  width:70px;
+	height:70px;
+  bottom:30px;
+	right:-80px;
+  border-radius:50px;
+  text-align:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.botonInicio a{
+  color: white;
+  font-size: 2em;
+  }
+
+
+.mostrar{
+  transition-duration: 0.3s;
+  right:20px;
+} */

@@ -1,0 +1,115 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/*no flex*/
+
+.no-flex div.contenedor{
+
+}
+
+.no-flex div.rojo{
+  background: red;
+
+}
+
+.no-flex div.verde{
+  background: green;
+
+}
+
+.no-flex div.amarillo{
+  background: yellow;
+
+}
+
+.no-flex div.naranja{
+  border: 1px solid black;
+  background: orange;
+
+}
+
+/*lo de flex*/
+
+.flex div.contenedor, div.contenedorNaranjas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex div.rojo {
+  background: red;
+}
+
+.flex div.verde {
+  background: green;
+}
+
+.flex div.amarillo {
+  background: yellow;
+}
+
+.flex div.naranja {
+  border: 1px solid black;
+  background: orange;
+}
+
+@media screen and (min-width:760px) {
+  .flex div.contenedorNaranjas{
+    flex-direction: row-reverse;
+  }
+
+  .flex div.rojo {
+    height: 75vh;
+    width: 74vw;
+  }
+
+  .flex div.verde {
+    height: 75vh;
+    width: 24vw;
+  }
+
+  .flex div.amarillo {
+    height: 25vh;
+    width: 98vw;
+  }
+
+  .flex div.naranja {
+    height: 25vh;
+    width: 32vw;
+  }
+}
+
+@media screen and (min-width:360px) and (max-width:720px) {
+
+  .flex div.rojo {
+    height: 60vh;
+    width: 99vw;
+  }
+
+  .flex div.verde {
+    height: 40vh;
+    width: 99vw;
+  }
+
+  .flex div.amarillo {
+    height: 40vh;
+    width: 99vw;
+  }
+
+  .flex div.naranja {
+    height: 25vh;
+    width: 49vw;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .flex div.contenedorNaranjas{
+      flex-direction: column-reverse;
+  }
+
+  .flex div.rojo, div.verde, div.amarillo, div.naranja {
+    height: 25vh;
+    width: 99vw;
+  }
+}

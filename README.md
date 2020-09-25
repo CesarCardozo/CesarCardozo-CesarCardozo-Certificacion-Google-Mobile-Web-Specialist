@@ -10,3 +10,5 @@ Lista de sesiones:
 [14-9-2020]		https://web.microsoftstream.com/video/cfc060b0-4021-4655-83b8-740ba41a3247
 
 [21-9-2020]		https://web.microsoftstream.com/video/3e117181-40c3-4165-a8c1-bbef9fdc7403
+
+[25-9-2020]		https://css-tricks.com/snippets/css/a-guide-to-flexbox/   -> guia para flexbox
